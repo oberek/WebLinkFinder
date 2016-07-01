@@ -47,8 +47,8 @@ public class TestAgainstResults {
     // @Test
     public void test() throws FileNotFoundException, IOException {
         LinkFinder lf = new LinkFinder();
-       InputStream is = new FileInputStream("C:\\Users\\Maciej\\Documents\\NetBeansProjects\\WebLinkFinder\\src\\weblinkfinder\\results");
+        InputStream is = new FileInputStream("C:\\Users\\Maciej\\Documents\\NetBeansProjects\\WebLinkFinder\\src\\weblinkfinder\\results");
 
-       assertTrue(lf.checkAgainstResults(lf.getLinks(lf.processPage(is))));
+        assertTrue(lf.checkAgainstResults(lf.getLinks(lf.processPage(is))));
     }
 }
